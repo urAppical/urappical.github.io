@@ -1,7 +1,16 @@
 header {
-    background: linear-gradient(#e66465, #9198e5);
+    background: linear-gradient(to left top, #ff00aa, #ff8000);
+    padding: 2%;
+    color: #ffffff;
 }
 nav {
-    background-color: #1753c2;
+    background-color: #5f83c6;
     color: #ffffff;
+}
+nav li{
+    display: inline;
+    padding: 2%;
+}
+footer {
+    background-color: #8b70de;
 }

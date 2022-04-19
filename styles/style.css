@@ -11,6 +11,12 @@ nav li{
     display: inline;
     padding: 2%;
 }
+section.conclusion img{
+    display: block;
+    width: 30%;
+    margin: auto;
+    
+}
 footer {
     background-color: #8b70de;
 }

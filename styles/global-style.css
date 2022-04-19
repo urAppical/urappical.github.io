@@ -14,3 +14,9 @@ nav li{
 footer {
     background-color: #8b70de;
 }
+.comment{
+    background-color: #b1c7f0;
+    border-left-width: 3px;
+    color:#1e5dd0;
+    border-left-color: #1e5dd0;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" prefix="og: http://ogp.me/ns#">
+    <!--this prefix is required to use facebooks open graph data protocol-->
     <head>
         <meta charset="utf-8">
         <!--when you give more info (meta) about your page it make it more relevant for search engine-->
@@ -7,6 +8,8 @@
         <meta name="description" content="urAppical cool personal web-site=)">
         <!--your web site could be found by description (it shows while searching in browser)-->
         <!--meta keywords is deprecated because of abuse-->>
+        <meta property="og:image" content="images/red-cat.png">
+        <!--some web servecies has their own protocols (some just use facebook open graph data (og)) for meta data for example facebook og:image property (check https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)-->
         <link rel="stylesheet" href="styles/global-style.css">
         <link rel="stylesheet" href="styles/home-style.css">
         <title>urAppical</title>
@@ -25,15 +28,17 @@
             </ul>
         </nav>
         <main>
+            <h1>Home page</h1>
+            <!--h1 should be only used for titles-->
             <section>
-                <h1>Welcome!</h1>
+                <h2>Welcome!</h2>
                 <p>Welcome on my personal web-site! It  mainly
                     serves as my portfolio so there you can find
                     all my project and may be some of them will be
                     usefull for you!</p>
             </section>
             <section>
-                <h1>web-site navigation</h1>
+                <h2>web-site navigation</h2>
                 <p>So as you probably guess you can use navigation
                     bar to proceed to a page you need. Let me tell
                     you what you can find on those pages:</p>
@@ -65,7 +70,7 @@
                         </li>
                     </ul>
                     <section class="conclusion">
-                        <h1>Conclusion</h1>
+                        <h2>Conclusion</h2>
                         <p>I hope you will find something interesting and even
                             useful for you. <br>Enjoy!</p>
                         <img src="images/red-cat.png" alt="red cat">

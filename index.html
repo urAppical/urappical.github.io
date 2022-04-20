@@ -7,8 +7,17 @@
         <meta name="author" content="urAppical">
         <meta name="description" content="urAppical cool personal web-site=)">
         <!--your web site could be found by description (it shows while searching in browser)-->
-        <!--meta keywords is deprecated because of abuse-->>
-        <meta property="og:image" content="images/red-cat.png">
+        <!--"meta keywords" is deprecated because of abuse-->
+        <meta property="og:type" content="website"><!-- "og:type" can be omitted for 'website' (is default), required for other types: http://ogp.me/#types -->
+        <meta property="og:url" content="https://example.com">
+        <meta property="og:title" content="...">
+        <meta property="og:description" content="...">
+        <meta property="og:image" content="https://example.com/path/to/image.png">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:alt" content="...">
+        <meta property="og:image:width" content="...">
+        <meta property="og:image:height" content="...">
+        <meta property="og:site_name" content="...">
         <!--some web servecies has their own protocols (some just use facebook open graph data (og)) for meta data for example facebook og:image property (check https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)-->
         <link rel="stylesheet" href="styles/global-style.css">
         <link rel="stylesheet" href="styles/home-style.css">

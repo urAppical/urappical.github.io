@@ -1,4 +1,5 @@
-const image = document.querySelector("img")
-image.onclick = function(){
-    image.setAttribute("src", "images/gru-with-gun.png")
-}
+const cat = document.getElementById("cat")
+
+cat.addEventListener("click", function(e){
+    e.setAttribute("src", "images/gru-with-gun.png")
+})

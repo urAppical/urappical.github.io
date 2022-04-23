@@ -8,5 +8,108 @@
     <body>
         <h1>Playground</h1>
         <p class="comment">This is my custom comment</p>
+        <p class="comment">Lets look at description list example:</p>
+        <dl>
+            <dt>Term 1</dt>
+            <dd>Description 1</dd>
+            <dt>Term 2</dt>
+            <dd>Description 2</dd>
+            <dd>Description with no term</dd>
+            <dt>Term with no desctiption</dt>
+        </dl>
+        <p class="comment">Quotations:</p>
+        <p>Hello and welcome to my motivation page. As <a href="http://www.brainyquote.com/quotes/authors/c/confucius.html"><cite>Confucius' quotes site</cite></a> says:</p>
+
+        <!--<blockquote> for quote separated in a block and <q> is inline quote-->
+        <blockquote cite="http://www.brainyquote.com/quotes/authors/c/confucius.html">
+        <p>It does not matter how slowly you go as long as you do not stop.</p>
+        </blockquote>
+
+        <p>I also love the concept of positive thinking, and 
+            <!--"cite" attribute is a link to resource site-->
+            <q cite="http://example.com/affirmationsforpositivethinking">
+            The Need To Eliminate Negative Self Talk</q> 
+            (as mentioned in <a href="http://example.com/affirmationsforpositivethinking">
+            <!--<cite> is for references (their names) to books and resorces-->
+            <cite>Affirmations for Positive Thinking</cite></a>.)
+        </p>
+        <p class="comment">Abbreviations:</p>
+        <!--addr "title" attribute set the text shown when you hover your mouse-->
+        <p><abbr title="National Aeronautics and Space Administration">NASA</abbr> sure does some exciting work.</p>
+        
+        <p class="comment">Address:</p>
+        <!--adress have special semantic meaning (as most elements) it is used to contain contact info-->
+        <address>
+            <p>
+              Chris Mills<br>
+              Manchester<br>
+              The Grim North<br>
+              UK
+            </p>
+          
+            <ul>
+              <li>Tel: 01234 567 890</li>
+              <li>Email: me@grim-north.co.uk</li>
+            </ul>
+          </address>
+        
+        <p class="comment">Sub and supscripts:</p>
+        <p>My birthday is on the 25<sup>th</sup> of May 2001.</p>
+        <p>Caffeine's chemical formula is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.</p>
+        <p>If x<sup>2</sup> is 9, x must equal 3 or -3.</p>
+        
+        <p class="comment">Computer code:</p>
+        <!--<pre>: For retaining whitespace (generally code blocks)-->
+        <!--<code>: For marking up generic pieces of computer code-->
+        <!--<var>: For specifically marking up variable names-->
+        <!--<kbd>: For marking up keyboard (and other types of) input entered into the computer-->
+        <!--<samp>: For marking up the output of a computer program-->
+        
+        <pre><code>var para = document.querySelector('p');
+
+            para.onclick = function() {
+              alert('Owww, stop poking me!');
+            }</code></pre>
+            
+            <p>You shouldn't use presentational elements like <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>.</p>
+            
+            <p>In the above JavaScript example, <var>para</var> represents a paragraph element.</p>
+            
+            <p>Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.</p>
+            
+            <pre>$ <kbd>ping mozilla.org</kbd>
+            <samp>PING mozilla.org (63.245.215.20): 56 data bytes
+            64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp>
+        </pre>
+        <p class="comment">Time:</p>
+        <!--<time> element for marking up times and dates in a machine-readable format-->
+        <!-- Standard simple date -->
+        <time datetime="2016-01-20">20 January 2016</time>
+        <!-- Just year and month -->
+        <time datetime="2016-01">January 2016</time>
+        <!-- Just month and day -->
+        <time datetime="01-20">20 January</time>
+        <!-- Just time, hours and minutes -->
+        <time datetime="19:30">19:30</time>
+        <!-- You can do seconds and milliseconds too! -->
+        <time datetime="19:30:01.856">19:30:01.856</time>
+        <!-- Date and time -->
+        <time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time>
+        <!-- Date and time with timezone offset -->
+        <time datetime="2016-01-20T19:30+01:00">7.30pm, 20 January 2016 is 8.30pm in France</time>
+        <!-- Calling out a specific week number -->
+        <time datetime="2016-W04">The fourth week of 2016</time>  
+        <p class="comment"> Basic site structure:</p>
+        <!--header, footer and nav in most cases are the same on every web-site page-->
+        <!--div and span have no semantic meaning-->
+        <ul>
+            <li><strong>header:</strong> <a href="/en-US/docs/Web/HTML/Element/header"><code>&lt;header&gt;</code></a>.</li>
+            <li><strong>navigation bar:</strong> <a href="/en-US/docs/Web/HTML/Element/nav"><code>&lt;nav&gt;</code></a>.</li>
+            <li><strong>main content:</strong> <a href="/en-US/docs/Web/HTML/Element/main"><code>&lt;main&gt;</code></a>, with various content subsections represented by <a href="/en-US/docs/Web/HTML/Element/article"><code>&lt;article&gt;</code></a>, <a href="/en-US/docs/Web/HTML/Element/section"><code>&lt;section&gt;</code></a>, and <a href="/en-US/docs/Web/HTML/Element/div"><code>&lt;div&gt;</code></a> elements.</li>
+            <li><strong>sidebar:</strong> <a href="/en-US/docs/Web/HTML/Element/aside"><code>&lt;aside&gt;</code></a>; often placed inside <a href="/en-US/docs/Web/HTML/Element/main"><code>&lt;main&gt;</code></a>.</li>
+            <li><strong>footer:</strong> <a href="/en-US/docs/Web/HTML/Element/footer"><code>&lt;footer&gt;</code></a>.</li>
+        </ul>
+        <!--"target" attribute allows you to choose how to open your href link ("_blank" means new tab)-->
+        <p class="comment">Note: for debugging use build in browser tools and <a target="_blank" href="https://validator.w3.org/#validate_by_upload">wc3 validator</a></p>
     </body>
 </html>
